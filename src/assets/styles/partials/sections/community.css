@@ -1,0 +1,77 @@
+.community {
+	background: url('/assets/img/bg/bg.png');
+	background-size: 100%;
+	background-position: cover;
+	height: 700px;
+	padding-top: 100px;
+	margin-top:20px;
+	&__wrapper {
+		max-width: 1000px;
+		margin: 0 auto;
+		.community__header {
+			&_name {
+				color: #9ec02d;
+				font-size: 39.2px;
+				text-align: center;
+				text-transform: capitalize;
+			}
+			&_text {
+				color: #9b9b9b;
+				text-align: center;
+				font-size: 19.2px;
+				line-height: 30px;
+			}
+		}
+		.reviews {
+			display: flex;
+			justify-content: space-between;
+			margin-top: 180px;
+			.review__item {
+				.review {
+					background-color: #fff;
+					width: 320px;
+					padding: 20px 30px;
+					border-radius: 10px;
+					text-align: center;
+					position: relative;
+					&:after {
+						content: ''; 
+						position: absolute; 
+						left: 90px; bottom: -20px;
+						border: 20px solid transparent; 
+						border-left: 20px solid #fff; 
+					}
+					&__name {
+						color: #add136;
+						font-size: 21.2px;
+					}
+					&__text {
+						color: #848484;
+						font-size: 13.2px;
+						line-height: 25px;
+					}
+				}
+			}
+			.review__author {
+				&_img {
+					width: 100%;
+					border-radius: 10px;
+					position: relative;
+					top: 35px;
+					left: 80px;
+					width: 60px;
+					height: 60px;
+					margin-right: 20px;
+				}
+				&_name {
+					position: relative;
+					left: 80px;
+					top: 10px;
+					font-weight: 600;
+					text-align: center;
+					color: $color-dark
+				}
+			}
+		}
+	}
+}

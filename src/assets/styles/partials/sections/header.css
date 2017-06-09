@@ -1,0 +1,56 @@
+.header {
+	padding: 25px 0;
+	position: fixed;
+	z-index: 100;
+	width: 100%;
+	background-color: $color-main__light;
+	transition: padding .5s, box-shadow .5s;
+	.wrapper__header {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		.logo {
+			text-transform: uppercase;
+			font-family: 'Nunito', sans-serif;
+			font-size: 31.2px;
+			color: $color-dark;
+			position: relative;
+			left: 40px;
+			&:before {
+				position: absolute;
+				content: url("/assets/img/icons/logo.svg");
+				top: 0;
+				left: -40px;
+			}
+		}
+		.main-menu {
+			padding: 0;
+			margin: 0;
+			display: flex;
+			&__item {
+				list-style: none;
+				margin-left: 25px;
+				.main-menu__link {
+					color: $color-light;
+					text-transform: uppercase;
+					font-size: 13.2px;
+					font-weight: 600;
+					transition: color .5s;
+					&:hover {
+						color: $color-main;
+					}
+				}
+			}
+		}
+		.login {
+			color: #fff;
+			background-color: $color-main;
+			padding: 15px 40px;
+			border-radius: 25px;
+			text-transform: uppercase;
+		}
+	}
+}
+
+
+

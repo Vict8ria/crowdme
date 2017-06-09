@@ -1,0 +1,11 @@
+@import './variables.css';
+@import 'partials/vendors/typography.css';
+@import 'partials/vendors/normalize.css';
+@import 'partials/sections/header.css';
+@import 'partials/sections/slider.css';
+@import 'partials/sections/work.css';
+@import 'partials/sections/find.css';
+@import 'partials/sections/community.css';
+@import 'partials/sections/projects.css';
+@import 'partials/sections/partners.css';
+@import 'partials/sections/footer.css';

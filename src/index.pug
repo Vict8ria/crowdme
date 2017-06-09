@@ -1,0 +1,160 @@
+doctype html
+html(lang='en')
+	head
+		title Crowdme
+		link(href="https://fonts.googleapis.com/css?family=Montserrat|Nunito|Open+Sans:300,400,600,700" rel="stylesheet")
+		link(href='/assets/css/main.css', rel='stylesheet')
+	body
+		header.header
+			.wrapper.wrapper__header
+				a.logo(href="/") Crowdme
+				ul.main-menu
+					li.main-menu__item
+						a.main-menu__link(href="/") Home
+					li.main-menu__item
+						a.main-menu__link(href="/") How it works
+					li.main-menu__item
+						a.main-menu__link(href="/") Discover a project
+					li.main-menu__item
+						a.main-menu__link(href="/") Blog
+					li.main-menu__item
+						a.main-menu__link(href="/") Find out more
+				a.login(href="/") Login
+		.slider
+			.slider__wrapper
+				img.slide.showing(src="/assets/img/slides/slide.jpg", opacity=".3")
+				img.slide(src="/assets/img/slides/slide2.jpg")
+			.slider__text
+				h1.slider__text_name Intellectual Property has the Shelf Life
+					spans.slider__text_style of a Banana.
+				a.button.button__color-main.slider__button(href="/") Become a Member
+				.slider__arrows
+					span.arrow_left#previous(href="/")
+					span.arrow_right#next(href="/")
+		main
+			section.work
+				.wrapper
+					.work__description
+						h2.work__description_header Our work is the presentation of our capabilities.
+						p.work__description_text.
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation 
+
+						p.work__description_text.
+							Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+					.info
+						ul.info__items
+							li.info__item.active(onclick="changeview(event, 'block1')") Simple
+							li.info__item(onclick="changeview(event, 'block2')") Transparent
+							li.info__item(onclick="changeview(event, 'block3')") Collaborative
+						.line
+						.info__description
+							.block#block1
+								h2.info__header Browse projects, like booking a hotel online!
+								p.info__text Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et do lore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+							.block#block2
+								h2.info__header Browse projects, like booking a hotel online!
+								p.info__text Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et do lore magna aliqua. 
+							.block#block3
+								h2.info__header Browse projects
+								p.info__text Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et do lore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+			section.find
+				.wrapper.wrapper__find
+					.find__item.image1
+						h4.find__header Find Properties
+						p.find__text Sign up to browse the portfolio. Your journey to becoming a real estate baron starts here.
+						a.button.button__color(href="/") Become A Member
+					.find__item.image2
+						h4.find__header Find Properties
+						p.find__text Sign up to browse the portfolio. Your journey to becoming a real estate baron starts here.
+						a.button.button__color-main(href="/") Become A Member
+			section.projects
+				.projects__wrapper.wrapper
+					.projects__header
+						.projects__header_info
+							h3.header-name Featured Projects
+							p.description-text.
+								Brief details of new and popular projects. To view full listings, you will be required to sign up and become a member.
+						.projects__member
+							a(href="/").button.button__light Become a Member
+					.projects__main
+						.project__item
+							img.project__img(src="/assets/img/projects/london.jpg")
+							.mark From 
+								span GBP 3600
+							.project__descrition
+								h4 Ontario Tower, LONDON
+								p.project__text.
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+								.project__degree.degree_10
+								.project__info
+									p 10% funded
+									p 8 days left
+								.project__link
+									a.link.triangle(href="/") See project details
+						.project__item
+							img.project__img(src="/assets/img/projects/london-1.jpg")
+							.mark From 
+								span GBP 3600
+							.project__descrition
+								h4 Ontario Tower, LONDON
+								p.project__text.
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+								.project__degree.degree_60
+								.project__info
+									p 60% funded
+									p 8 days left
+								.project__link
+									a.link.triangle(href="/") See project details
+						.project__item
+							img.project__img(src="/assets/img/projects/london-2.jpg")
+							.mark From 
+								span GBP 3600
+							.project__descrition
+								h4 Ontario Tower, LONDON
+								p.project__text.
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+								.project__degree.degree_40
+								.project__info
+									p 40% funded
+									p 8 days left
+								.project__link
+									a.link.triangle(href="/") See project details
+			section.community
+				.community__wrapper
+					.community__header
+						h2.community__header_name Be part of a growing international community
+						p.community__header_text.
+							One of the challenges in networking is everybody thinks it's making cold calls to strangers. Actually, it's the people who already have strong trust relationships with you
+					.reviews
+						.review__item
+							.review
+								h3.review__name One of the Best 
+								p.review__text Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod taempor incididunt ut labore et dolore magna aliqua.
+							.review__author
+								img.review__author_img(src="/assets/img/reviews/author.jpg")
+								span.review__author_name Jessica Chastain
+						.review__item
+							.review
+								h3.review__name One of the Best 
+								p.review__text Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod taempor incididunt ut labore et dolore magna aliqua.
+							.review__author
+								img.review__author_img(src="/assets/img/reviews/author-1.jpg")
+								span.review__author_name Joseph Leonard Gordon-Levitt
+			section.partners
+				ul.partners__items
+					li.partner__item
+						img(src="/assets/img/partners/1.png")
+					li.partner__item
+						img(src="/assets/img/partners/2.png")
+					li.partner__item
+						img(src="/assets/img/partners/3.png")
+					li.partner__item
+						img(src="/assets/img/partners/4.png")
+					li.partner__item
+						img(src="/assets/img/partners/5.png")
+		footer.footer
+			span.copy Copyright &copy; 2001 - 2017  
+			a.copy__link(href="/") Cssauthor.com
+		script(src="/assets/js/jquery-3.1.1.min.js", type="text/javascript")
+		script(src="/assets/js/script.js", type="text/javascript")
+

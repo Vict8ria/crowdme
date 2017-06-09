@@ -1,0 +1,30 @@
+.find {
+	background-image: linear-gradient(to left, #f5f9eb, #f5f9eb 50%, #e2f8ff 50%);
+	background-repeat: no-repeat;
+	.wrapper__find {
+		display: flex;
+		justify-content: space-between;
+		.find__item {
+			padding: 40px 0 40px 170px;
+			box-sizing: border-box;
+			position: relative;
+			width: 43%;
+			color: $color-dark;
+			.find__header {
+				font-size: 23.2px;
+				margin-bottom: 30px;
+			}
+			.find__text {
+				font-size: 17.2px;
+				line-height: 25px;
+			}
+		}
+		.image1 {
+			background: url('/assets/img/icons/chair.svg') no-repeat 0% 40%;
+		}
+		.image2 {
+			background: url('/assets/img/icons/purse.svg') no-repeat 0% 40%;
+		}
+	}
+	
+}
