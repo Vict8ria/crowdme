@@ -135,7 +135,6 @@
 	.info__description {
 		padding: 80px 40px 60px 300px;
 		background: url('/assets/img/icons/glasses.png') 10% 50% no-repeat;
-		background-clip: text;
 		min-height: 200px;
 		@media (max-width: $mobile-mid-width) {
 			padding: 200px 0 0;
