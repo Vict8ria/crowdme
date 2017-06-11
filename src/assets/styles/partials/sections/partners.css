@@ -3,13 +3,17 @@
 		display: flex;
 		align-items: center;
 		justify-content: center;
+		flex-wrap: wrap;
 		.partner__item{
 			width: 130px;
 			height: 70px;
-			display:flex;
+			display: flex;
 			align-items: center;
 			justify-content: center;
 			overflow: hidden;
+			@media (max-width: $mobile-mid-width) {
+				flex-direction: column;
+			}
 			img {
 				width: 70%;
 				filter: grayscale(100%);

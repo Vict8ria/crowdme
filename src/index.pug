@@ -8,17 +8,21 @@ html(lang='en')
 		header.header
 			.wrapper.wrapper__header
 				a.logo(href="/") Crowdme
-				ul.main-menu
-					li.main-menu__item
-						a.main-menu__link(href="/") Home
-					li.main-menu__item
-						a.main-menu__link(href="/") How it works
-					li.main-menu__item
-						a.main-menu__link(href="/") Discover a project
-					li.main-menu__item
-						a.main-menu__link(href="/") Blog
-					li.main-menu__item
-						a.main-menu__link(href="/") Find out more
+				nav.nav__main_menu 
+					input(type='checkbox', id='menu', class="toggle_menu")
+					label(for='menu',  class='toggle_button_menu')
+						span
+					ul.main_menu
+						li.main_menu__item
+							a.main_menu__link(href="/") Home
+						li.main_menu__item
+							a.main_menu__link(href="/") How it works
+						li.main_menu__item
+							a.main_menu__link(href="/") Discover a project
+						li.main_menu__item
+							a.main_menu__link(href="/") Blog
+						li.main_menu__item
+							a.main_menu__link(href="/") Find out more
 				a.login(href="/") Login
 		.slider
 			.slider__wrapper
@@ -78,9 +82,10 @@ html(lang='en')
 							a(href="/").button.button__light Become a Member
 					.projects__main
 						.project__item
-							img.project__img(src="/assets/img/projects/london.jpg")
-							.mark From 
-								span GBP 3600
+							.project__image
+								img.image(src="/assets/img/projects/london.jpg")
+								.mark From 
+									span GBP 3600
 							.project__descrition
 								h4 Ontario Tower, LONDON
 								p.project__text.
@@ -92,9 +97,10 @@ html(lang='en')
 								.project__link
 									a.link.triangle(href="/") See project details
 						.project__item
-							img.project__img(src="/assets/img/projects/london-1.jpg")
-							.mark From 
-								span GBP 3600
+							.project__image
+								img.image(src="/assets/img/projects/london-1.jpg")
+								.mark From 
+									span GBP 3600
 							.project__descrition
 								h4 Ontario Tower, LONDON
 								p.project__text.
@@ -106,9 +112,10 @@ html(lang='en')
 								.project__link
 									a.link.triangle(href="/") See project details
 						.project__item
-							img.project__img(src="/assets/img/projects/london-2.jpg")
-							.mark From 
-								span GBP 3600
+							.project__image
+								img.image(src="/assets/img/projects/london-2.jpg")
+								.mark From 
+									span GBP 3600
 							.project__descrition
 								h4 Ontario Tower, LONDON
 								p.project__text.
@@ -139,7 +146,7 @@ html(lang='en')
 								p.review__text Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod taempor incididunt ut labore et dolore magna aliqua.
 							.review__author
 								img.review__author_img(src="/assets/img/reviews/author-1.jpg")
-								span.review__author_name Joseph Leonard Gordon-Levitt
+								span.review__author_name Joseph Gordon-Levitt
 			section.partners
 				ul.partners__items
 					li.partner__item

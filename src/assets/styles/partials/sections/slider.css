@@ -1,8 +1,16 @@
 .slider {
-	height: 695px;
+	top: 100px;
+	height: 590px;
 	position: relative;
 	overflow: hidden;
 	z-index: 1;
+	box-sizing: border-box;
+	@media (max-width: $mobile-width) {
+		height: 460px;
+	}
+	@media (max-width: $mobile-mid-width) {
+		height: 400px;
+	}
 	&:hover .slider__arrows {
 		opacity: 1;
 	}
@@ -13,6 +21,18 @@
 			width: 100%;
 			opacity: 0;
 			transition: opacity 1s;
+			@media (max-width: $mobile-width) {
+				width: 100%;
+				height: auto;
+			}
+			@media (max-width: $mobile-mid-width) {
+				height: auto;
+				width: 100%;
+			}
+			@media (max-width: 580px) {
+				height: 400px;
+				width: auto;
+			}
 		}
 		.showing {
 			opacity: 1;
@@ -33,15 +53,24 @@
 		left: 0;
 		right: 0;
 		bottom: 0;
+		padding: 0 20px;
+		box-sizing: border-box;
 		&_name {
 			color: $color-main__light;
 			font-weight: 600;
 			font-size: 49.2px;
 			line-height: 80px;
+			@media (max-width:$tablet-mid-width) {
+				font-size: 30.2px;
+				line-height: 50px;
+			}
 			.slider__text_style {
 				font-weight: 400;
 				display: block;
 				font-size: 35.2px;
+				@media (max-width:$tablet-mid-width) {
+					font-size: 25.2px;
+				}
 			}
 		}
 		.slider__button {
@@ -58,6 +87,9 @@
 		display: flex;
 		transition: opacity .5s;
 		opacity: 0;
+		@media (max-width:$tablet-mid-width) {
+			display: none;
+		}
 		.arrow_left {
 			width: 50px;
 			display: block;

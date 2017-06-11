@@ -4,6 +4,9 @@
 	text-align: center;
 	font-size: 13.2px;
 	color: $color-light;
+	@media (max-width: $tablet-mid-width) {
+		padding: 40px 20px;
+	}
 	.copy {
 		&__link {
 			transition: color .5s;

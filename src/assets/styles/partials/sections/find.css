@@ -1,15 +1,35 @@
 .find {
 	background-image: linear-gradient(to left, #f5f9eb, #f5f9eb 50%, #e2f8ff 50%);
 	background-repeat: no-repeat;
+	@media (max-width: $mobile-width) {
+		background-image: linear-gradient(to top, #f5f9eb, #f5f9eb 50%, #e2f8ff 50%);
+	}
 	.wrapper__find {
 		display: flex;
 		justify-content: space-between;
+		@media (max-width:$tablet-mid-width) {
+			margin-left: 20px;
+			margin-right: 20px;
+		}
+		@media (max-width:$mobile-width) {
+			flex-direction: column;
+		}
 		.find__item {
 			padding: 40px 0 40px 170px;
 			box-sizing: border-box;
 			position: relative;
 			width: 43%;
 			color: $color-dark;
+			@media (max-width:$mobile-width) {
+				width: 100%;
+				padding-left: 44%;
+			}
+			@media (max-width:$mobile-small-width) {
+				text-align: center;
+			}
+			@media (max-width:$mobile-small-width) {
+				padding: 200px 40px 40px;
+			}
 			.find__header {
 				font-size: 23.2px;
 				margin-bottom: 30px;
@@ -20,10 +40,22 @@
 			}
 		}
 		.image1 {
-			background: url('/assets/img/icons/chair.svg') no-repeat 0% 40%;
+			background: url('/assets/img/icons/chair.png') no-repeat 0% 40%;
+			@media (max-width:$mobile-width) {
+				background-position: 13% 50%;
+			}
+			@media (max-width:$mobile-small-width) {
+				background-position: 50% 16%;
+			}
 		}
 		.image2 {
-			background: url('/assets/img/icons/purse.svg') no-repeat 0% 40%;
+			background: url('/assets/img/icons/purse.png') no-repeat 0% 40%;
+			@media (max-width:$mobile-width) {
+				background-position: 13% 50%;
+			}
+			@media (max-width:$mobile-small-width) {
+				background-position: 50% 16%;
+			}
 		}
 	}
 	
